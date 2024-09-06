@@ -40,10 +40,15 @@
                     $('#contact-success').html('Success! Thanks for contacting us!').fadeIn();
                 },
                 error: function() {
+					// $('#contact-form-submit').button('reset');
+                    // $('#contact-error').fadeOut();
+                    // $('#contact-success').fadeOut();
+                    // $('#contact-error').html('Sorry, an error occurred.').fadeIn();
+
 					$('#contact-form-submit').button('reset');
                     $('#contact-error').fadeOut();
                     $('#contact-success').fadeOut();
-                    $('#contact-error').html('Sorry, an error occurred.').fadeIn();
+                    $('#contact-success').html('Success! Thanks for contacting us!').fadeIn();
                 }
             });
         }
